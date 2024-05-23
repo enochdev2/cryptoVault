@@ -11,7 +11,7 @@ async function uploadImageController(req,res,next){
         const user=await UserModel.findOne({userAddress:userAddress})
         if(!user){
             throw new Error("User does not exist")
-        }
+        } 
         if(user.encryptionKey===null){
             const encryptionKey=generateEncryptionKey(32);
             user.encryptionKey=encryptionKey;

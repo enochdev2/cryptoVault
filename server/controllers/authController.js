@@ -2,6 +2,8 @@ const ethers = require('ethers')
 const UserModel = require('../models/User')
 const jwt = require('jsonwebtoken')
 const {JWT_SECRETKEY}=require('../config/serverConfig')
+
+
 async function authController(req,res,next){
     try {
         const {signature}=req.body;
