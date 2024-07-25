@@ -7,6 +7,6 @@ const ConnectedAccount = () => {
         <p className="font-semibold">Connected Account : {selectedAccount}</p>
     </div>
     );
-}
+} 
  
 export default ConnectedAccount;
